@@ -10,18 +10,20 @@
 
 @interface DownloadManager : NSObject
 
+@property (nonatomic, copy) NSString *dataPath;
+
+@property (nonatomic, copy) NSString *filePath;
+
+@property (nonatomic, copy) NSString *entityDataPath;
+
 - (void)downloadDataFeed;
 
 - (void)initDataFeed;
 
 - (id)cachedDownloadInFolder:(NSURL *)url :(NSString *)folderName;
 
--(void)debugFunction:(NSString *)logString;
+- (void)debugFunction:(NSString *)logString;
 
-@property (nonatomic, copy) NSString *dataPath;
-
-@property (nonatomic, copy) NSString *filePath;
-
-@property (nonatomic, copy) NSString *entityDataPath;
+- (void)setEntityDataPath:(NSString *)folderName;
 
 @end

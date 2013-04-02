@@ -14,6 +14,16 @@
 
 #import "ZipArchive/ZipArchive.h"
 
+@interface NSObject (PrivateMethods)
+
+- (void) initCache;
+- (void) clearCache;
+- (id) getFileModificationDate;
+- (void) cachedDownload:(NSURL *)theURL :(NSInteger)cacheTime;
+- (void) uncachedDownload:(NSURL *)theURL;
+
+@end
+
 @implementation DownloadManager
 
 @synthesize dataPath;
@@ -24,19 +34,6 @@
 
 const double defaultCacheTime = 86400.0;
 
-@interface NSObject (PrivateMethods)
-
-- (void) initCache;
-- (void) clearCache;
-- (id) getFileModificationDate;
-- (void) cachedDownload:(NSURL *)theURL :(NSInteger)cacheTime;
-- (void) uncachedDownload:(NSURL *)theURL;
-@end
-
-
-#pragma mark -
-#pragma mark Generico
-
 - (void)setEntityDataPath:(NSString *)folderName
 {
     _entityDataPath = [NSString stringWithFormat:@"%@/%@", dataPath, folderName];
@@ -45,7 +42,7 @@ const double defaultCacheTime = 86400.0;
 	if (![[NSFileManager defaultManager] createDirectoryAtPath:_entityDataPath
 								   withIntermediateDirectories:NO
 													attributes:nil
-														 error:nil]) {    
+														 error:nil]) {
 	}
     
 }
@@ -99,11 +96,11 @@ const double defaultCacheTime = 86400.0;
     {
         entityDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:entitiesPath];
         
-        //[[NSMutableDictionary alloc] initWithContentsOfFile:entitiesPath];   
+        //[[NSMutableDictionary alloc] initWithContentsOfFile:entitiesPath];
     }
     
     /* read from plist which data have to clean */
-    NSString *updatesPath = [[NSBundle mainBundle] pathForResource:PLIST_UPDATES ofType:@"plist"];    
+    NSString *updatesPath = [[NSBundle mainBundle] pathForResource:PLIST_UPDATES ofType:@"plist"];
     
     NSMutableDictionary *updatesDictionary = nil;
     
@@ -131,7 +128,7 @@ const double defaultCacheTime = 86400.0;
             NSLog(@"downloadDataFeed - do http :%@",theURL);
             
             /* downlaod and read which data have to clean */
-            data = [NSData dataWithContentsOfURL:theURL options:NSDataReadingUncached error:&error];                
+            data = [NSData dataWithContentsOfURL:theURL options:NSDataReadingUncached error:&error];
             
             if(error || !data){
                 //NSLog(@"errore download json");
@@ -139,10 +136,10 @@ const double defaultCacheTime = 86400.0;
             }
             
             
-            NSDictionary* json = [NSJSONSerialization 
-                                  JSONObjectWithData:data                           
-                                  options:kNilOptions 
-                                  error:&error]; 
+            NSDictionary* json = [NSJSONSerialization
+                                  JSONObjectWithData:data
+                                  options:kNilOptions
+                                  error:&error];
             
             NSArray* updates = [json objectForKey:@"updates"];
             
@@ -166,7 +163,7 @@ const double defaultCacheTime = 86400.0;
                 NSLog(@"chunks:%d",[[chunks objectAtIndex:2] intValue]);
                 
                 
-                if ([value_ intValue]>[[chunks objectAtIndex:2] intValue]) 
+                if ([value_ intValue]>[[chunks objectAtIndex:2] intValue])
                 {
                     
                     [self uncachedDownload:[NSURL URLWithString:[chunks objectAtIndex:0]]];
@@ -174,7 +171,7 @@ const double defaultCacheTime = 86400.0;
                     //NSLog(@"entityDictionary.value:%@",[NSString stringWithFormat:@"%@;%@;%@", [chunks objectAtIndex:0], [chunks objectAtIndex:1],value_]);
                     //NSLog(@"entityDictionary.key:%@",[NSString stringWithFormat:@"%@.%@", key_, key]);
                     
-                    [entityDictionary setValue:[NSString stringWithFormat:@"%@;%@;%@", [chunks objectAtIndex:0], [chunks objectAtIndex:1],value_] forKey:[NSString stringWithFormat:@"%@.%@", key_, key]];                                        
+                    [entityDictionary setValue:[NSString stringWithFormat:@"%@;%@;%@", [chunks objectAtIndex:0], [chunks objectAtIndex:1],value_] forKey:[NSString stringWithFormat:@"%@.%@", key_, key]];
                     
                     [entityDictionary writeToFile:entitiesPath atomically:YES];
                     
@@ -185,23 +182,23 @@ const double defaultCacheTime = 86400.0;
             }
             
             
-        }        
+        }
         
     }
     
     /* update as definied in cache timer */
     
-    if (entityDictionary != nil) 
+    if (entityDictionary != nil)
     {
         
         for (id key in entityDictionary)
         {
             //NSLog(@"key: %@", key);
             NSString *value = [entityDictionary objectForKey:key];
-            //NSLog(@"value: %@", value);            
+            //NSLog(@"value: %@", value);
             NSArray *chunks = [value componentsSeparatedByString: @";"];
             
-            [ self cachedDownload:[NSURL URLWithString:[chunks objectAtIndex:0]] :[Util parseTime:[chunks objectAtIndex:1]] ];  
+            [ self cachedDownload:[NSURL URLWithString:[chunks objectAtIndex:0]] :[Util parseTime:[chunks objectAtIndex:1]] ];
         }
         
     }
@@ -288,7 +285,7 @@ const double defaultCacheTime = 86400.0;
     NSLog(@"uncachedDownload - do http :%@",theURL);
     
     NSError *error;
-    data = [NSData dataWithContentsOfURL:theURL options:NSDataReadingUncached error:&error];                
+    data = [NSData dataWithContentsOfURL:theURL options:NSDataReadingUncached error:&error];
     
     if(error || !data){
         //NSLog(@"errore download json");
@@ -297,7 +294,7 @@ const double defaultCacheTime = 86400.0;
     
     [[NSFileManager defaultManager] createFileAtPath:filePath
                                             contents:data
-                                          attributes:nil];        
+                                          attributes:nil];
 }
 
 - (void) cachedDownload:(NSURL *)theURL :(NSInteger)cacheTime
@@ -316,7 +313,7 @@ const double defaultCacheTime = 86400.0;
     
     NSTimeInterval time = fabs([fileDate timeIntervalSinceNow]);
     
-    if ( (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) || (time > cacheTime) ) 
+    if ( (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) || (time > cacheTime) )
     {
         
         // se il json non è in cache ...
@@ -324,7 +321,7 @@ const double defaultCacheTime = 86400.0;
         NSLog(@"cachedDownload - do http :%@",theURL);
         
         NSError *error;
-        data = [NSData dataWithContentsOfURL:theURL options:NSDataReadingUncached error:&error];                
+        data = [NSData dataWithContentsOfURL:theURL options:NSDataReadingUncached error:&error];
         
         if(error || !data){
             //NSLog(@"errore download json");
@@ -333,15 +330,15 @@ const double defaultCacheTime = 86400.0;
         
         [[NSFileManager defaultManager] createFileAtPath:filePath
 												contents:data
-											  attributes:nil];        
-    } 
+											  attributes:nil];
+    }
 }
 
 -(void)debugFunction:(NSString *)logString{
     NSLog(@"log ----------------------- %@",logString);
 }
 
-- (id)cachedDownloadInFolder:(NSURL *)url :(NSString *)folderName    
+- (id)cachedDownloadInFolder:(NSURL *)url :(NSString *)folderName
 {
     
     NSData *data = nil;
@@ -358,22 +355,22 @@ const double defaultCacheTime = 86400.0;
 	if (![[NSFileManager defaultManager] createDirectoryAtPath:folderPath
 								   withIntermediateDirectories:NO
 													attributes:nil
-														 error:nil]) {    
+														 error:nil]) {
 	}
     
-    NSString *filePath__ = [folderPath stringByAppendingPathComponent:fileName];     
+    NSString *filePath__ = [folderPath stringByAppendingPathComponent:fileName];
     
     NSDate *fileDate = [self getFileModificationDate];
     
     NSTimeInterval time = fabs([fileDate timeIntervalSinceNow]);
     
-    if ( (![[NSFileManager defaultManager] fileExistsAtPath:filePath__]) || (time > defaultCacheTime) ) 
+    if ( (![[NSFileManager defaultManager] fileExistsAtPath:filePath__]) || (time > defaultCacheTime) )
     {
         
         // se il json non è in cache ...
         NSError *error;
         
-        data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&error];                
+        data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&error];
         
         if(error || !data){
             return filePath__ = NULL;
@@ -382,9 +379,9 @@ const double defaultCacheTime = 86400.0;
         
         [[NSFileManager defaultManager] createFileAtPath:filePath__
                                                 contents:data
-                                              attributes:nil];        
+                                              attributes:nil];
         
-    }   
+    }
     
     
     NSLog(@"DownloadManager.cachedDownloadInFolder - thread:[%@,%@]fileName:%@,filePath:%@", folderName, url, fileName, filePath__);
@@ -392,6 +389,5 @@ const double defaultCacheTime = 86400.0;
     
     return filePath__;
 }
-
 
 @end
