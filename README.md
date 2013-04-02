@@ -2,7 +2,7 @@ EventsReader
 ============
 Reader of JSON feed provided from external CMS.
 
-Once dowloaded, JSON feed and its related contents are cached on device. The content's engine uses update.json to retrive fresh data.
+Once dowloaded, JSON feed and its related contents are cached on device. The content's engine uses update.json to retreive fresh data.
 
 Events are displayed in master / detail view.
 
