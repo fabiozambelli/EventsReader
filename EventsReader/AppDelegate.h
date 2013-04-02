@@ -8,8 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "DownloadManager.h"
+
+#import "EventManager.h"
+
+@class Reachability;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    Reachability* hostReach;
+    Reachability* internetReach;
+    Reachability* wifiReach;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) DownloadManager *dm;
+@property (strong, nonatomic) NSMutableArray* eventList;
+@property (strong, nonatomic) EventManager* eventManager;
+@property (nonatomic, assign) BOOL internetAvailable;
 
 @end

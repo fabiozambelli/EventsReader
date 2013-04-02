@@ -14,9 +14,37 @@
 		D7141542152AEEEE00926AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7141541152AEEEE00926AAB /* main.m */; };
 		D7141546152AEEEE00926AAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7141545152AEEEE00926AAB /* AppDelegate.m */; };
 		D7141549152AEEEE00926AAB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7141547152AEEEE00926AAB /* MainStoryboard_iPhone.storyboard */; };
-		D714154C152AEEEE00926AAB /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714154A152AEEEE00926AAB /* MainStoryboard_iPad.storyboard */; };
-		D714154F152AEEEE00926AAB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D714154E152AEEEE00926AAB /* MasterViewController.m */; };
-		D7141552152AEEEE00926AAB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7141551152AEEEE00926AAB /* DetailViewController.m */; };
+		D7141552152AEEEE00926AAB /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7141551152AEEEE00926AAB /* EventDetailViewController.m */; };
+		D714155C152AEF7900926AAB /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D714155B152AEF7900926AAB /* Event.m */; };
+		D7141576152B168B00926AAB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7141575152B168B00926AAB /* icon.png */; };
+		D73352FD154EB47D00C91228 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = D73352FC154EB47D00C91228 /* checked.png */; };
+		D73352FF154EB48600C91228 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = D73352FE154EB48600C91228 /* unchecked.png */; };
+		D7335302154EB6D400C91228 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7335301154EB6D400C91228 /* FilterViewController.m */; };
+		D7CE9524154581BD001650F2 /* EventInfoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CE9523154581BD001650F2 /* EventInfoDetailViewController.m */; };
+		D7CE952B1545914B001650F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CE952A1545914B001650F2 /* MapKit.framework */; };
+		D7CE952E1545AC97001650F2 /* EntityAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CE952D1545AC97001650F2 /* EntityAnnotation.m */; };
+		D7D3988D157506BE00B1787D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3988C157506BE00B1787D /* Reachability.m */; };
+		D7D398901575073D00B1787D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3988F1575073D00B1787D /* Constants.m */; };
+		D7D3989C15750C2600B1787D /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D7D3989415750C2600B1787D /* ioapi.c */; };
+		D7D3989D15750C2600B1787D /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D7D3989615750C2600B1787D /* unzip.c */; };
+		D7D3989E15750C2600B1787D /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D7D3989815750C2600B1787D /* zip.c */; };
+		D7D3989F15750C2600B1787D /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7D3989B15750C2600B1787D /* ZipArchive.mm */; };
+		D7D398AA1575147600B1787D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D398A91575147600B1787D /* SystemConfiguration.framework */; };
+		D7D398AC157514C000B1787D /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D398AB157514C000B1787D /* libz.1.2.5.dylib */; };
+		D7D398AE157514EF00B1787D /* entities.zip in Resources */ = {isa = PBXBuildFile; fileRef = D7D398AD157514EF00B1787D /* entities.zip */; };
+		D7D398B01575154300B1787D /* updates.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7D398AF1575154300B1787D /* updates.plist */; };
+		D7D398BA15751FF600B1787D /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D398B915751FF600B1787D /* icon-retina.png */; };
+		D7D398BD157521B500B1787D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D398BC157521B500B1787D /* Default.png */; };
+		D7D398BF157521B800B1787D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D398BE157521B800B1787D /* Default@2x.png */; };
+		D7D4DB4C153C5EBF00F1A3F9 /* EventMediaGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DB4B153C5EBF00F1A3F9 /* EventMediaGalleryViewController.m */; };
+		D7D4DB85153D906500F1A3F9 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DB84153D906500F1A3F9 /* DownloadManager.m */; };
+		D7D4DB8D153DB95700F1A3F9 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DB8C153DB95700F1A3F9 /* Util.m */; };
+		D7D4DB91153EECF000F1A3F9 /* EntityInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DB90153EECF000F1A3F9 /* EntityInfo.m */; };
+		D7D4DB98153EF72400F1A3F9 /* entities.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7D4DB97153EF72300F1A3F9 /* entities.plist */; };
+		D7D4DB9B153EFEF600F1A3F9 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DB9A153EFEF600F1A3F9 /* EntityManager.m */; };
+		D7D4DB9E153F031B00F1A3F9 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DB9D153F031A00F1A3F9 /* EventManager.m */; };
+		D7D4DBB215406F2100F1A3F9 /* EventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4DBB115406F2000F1A3F9 /* EventListViewController.m */; };
+		D7F05B621534264A0098B092 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F05B611534264A0098B092 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +52,64 @@
 		D7141535152AEEEE00926AAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7141537152AEEEE00926AAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7141539152AEEEE00926AAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D714153D152AEEEE00926AAB /* EventsReader-Info.plist */ = {isa = PBXFileReference; path = "EventsReader-Info.plist"; sourceTree = "<group>"; };
+		D714153D152AEEEE00926AAB /* EventsReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventsReader-Info.plist"; sourceTree = "<group>"; };
 		D714153F152AEEEE00926AAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7141541152AEEEE00926AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D7141543152AEEEE00926AAB /* EventsReader-Prefix.pch */ = {isa = PBXFileReference; path = "EventsReader-Prefix.pch"; sourceTree = "<group>"; };
-		D7141544152AEEEE00926AAB /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7141543152AEEEE00926AAB /* EventsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventsReader-Prefix.pch"; sourceTree = "<group>"; };
+		D7141544152AEEEE00926AAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7141545152AEEEE00926AAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D7141548152AEEEE00926AAB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		D714154B152AEEEE00926AAB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		D714154D152AEEEE00926AAB /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
-		D714154E152AEEEE00926AAB /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		D7141550152AEEEE00926AAB /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
-		D7141551152AEEEE00926AAB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D7141550152AEEEE00926AAB /* EventDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
+		D7141551152AEEEE00926AAB /* EventDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
+		D714155A152AEF7900926AAB /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		D714155B152AEF7900926AAB /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		D7141575152B168B00926AAB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D73352FC154EB47D00C91228 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		D73352FE154EB48600C91228 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		D7335300154EB6D400C91228 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		D7335301154EB6D400C91228 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		D7CE9522154581BD001650F2 /* EventInfoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoDetailViewController.h; sourceTree = "<group>"; };
+		D7CE9523154581BD001650F2 /* EventInfoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoDetailViewController.m; sourceTree = "<group>"; };
+		D7CE952A1545914B001650F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D7CE952C1545AC97001650F2 /* EntityAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityAnnotation.h; sourceTree = "<group>"; };
+		D7CE952D1545AC97001650F2 /* EntityAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityAnnotation.m; sourceTree = "<group>"; };
+		D7D3988B157506BE00B1787D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D7D3988C157506BE00B1787D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D7D3988E1575073D00B1787D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D7D3988F1575073D00B1787D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		D7D3989315750C2600B1787D /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		D7D3989415750C2600B1787D /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		D7D3989515750C2600B1787D /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		D7D3989615750C2600B1787D /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		D7D3989715750C2600B1787D /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		D7D3989815750C2600B1787D /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		D7D3989915750C2600B1787D /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		D7D3989A15750C2600B1787D /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		D7D3989B15750C2600B1787D /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		D7D398A91575147600B1787D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7D398AB157514C000B1787D /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		D7D398AD157514EF00B1787D /* entities.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = entities.zip; sourceTree = "<group>"; };
+		D7D398AF1575154300B1787D /* updates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = updates.plist; sourceTree = "<group>"; };
+		D7D398B915751FF600B1787D /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina.png"; sourceTree = "<group>"; };
+		D7D398BC157521B500B1787D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D7D398BE157521B800B1787D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D7D4DB4A153C5EBF00F1A3F9 /* EventMediaGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventMediaGalleryViewController.h; sourceTree = "<group>"; };
+		D7D4DB4B153C5EBF00F1A3F9 /* EventMediaGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventMediaGalleryViewController.m; sourceTree = "<group>"; };
+		D7D4DB83153D906500F1A3F9 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		D7D4DB84153D906500F1A3F9 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		D7D4DB8B153DB95700F1A3F9 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		D7D4DB8C153DB95700F1A3F9 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		D7D4DB8F153EECEF00F1A3F9 /* EntityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityInfo.h; sourceTree = "<group>"; };
+		D7D4DB90153EECF000F1A3F9 /* EntityInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityInfo.m; sourceTree = "<group>"; };
+		D7D4DB97153EF72300F1A3F9 /* entities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = entities.plist; sourceTree = "<group>"; };
+		D7D4DB99153EFEF600F1A3F9 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
+		D7D4DB9A153EFEF600F1A3F9 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
+		D7D4DB9C153F031A00F1A3F9 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		D7D4DB9D153F031A00F1A3F9 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		D7D4DBB015406F2000F1A3F9 /* EventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListViewController.h; sourceTree = "<group>"; };
+		D7D4DBB115406F2000F1A3F9 /* EventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListViewController.m; sourceTree = "<group>"; };
+		D7F05B601534264A0098B092 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		D7F05B611534264A0098B092 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +117,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D398AC157514C000B1787D /* libz.1.2.5.dylib in Frameworks */,
+				D7D398AA1575147600B1787D /* SystemConfiguration.framework in Frameworks */,
+				D7CE952B1545914B001650F2 /* MapKit.framework in Frameworks */,
 				D7141536152AEEEE00926AAB /* UIKit.framework in Frameworks */,
 				D7141538152AEEEE00926AAB /* Foundation.framework in Frameworks */,
 				D714153A152AEEEE00926AAB /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +132,10 @@
 		D7141526152AEEEE00926AAB = {
 			isa = PBXGroup;
 			children = (
+				D7D398BE157521B800B1787D /* Default@2x.png */,
+				D7D398BC157521B500B1787D /* Default.png */,
+				D7D398B915751FF600B1787D /* icon-retina.png */,
+				D7141575152B168B00926AAB /* icon.png */,
 				D714153B152AEEEE00926AAB /* EventsReader */,
 				D7141534152AEEEE00926AAB /* Frameworks */,
 				D7141532152AEEEE00926AAB /* Products */,
@@ -72,6 +153,9 @@
 		D7141534152AEEEE00926AAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7D398A91575147600B1787D /* SystemConfiguration.framework */,
+				D7D398AB157514C000B1787D /* libz.1.2.5.dylib */,
+				D7CE952A1545914B001650F2 /* MapKit.framework */,
 				D7141535152AEEEE00926AAB /* UIKit.framework */,
 				D7141537152AEEEE00926AAB /* Foundation.framework */,
 				D7141539152AEEEE00926AAB /* CoreGraphics.framework */,
@@ -82,14 +166,9 @@
 		D714153B152AEEEE00926AAB /* EventsReader */ = {
 			isa = PBXGroup;
 			children = (
-				D7141544152AEEEE00926AAB /* AppDelegate.h */,
-				D7141545152AEEEE00926AAB /* AppDelegate.m */,
-				D7141547152AEEEE00926AAB /* MainStoryboard_iPhone.storyboard */,
-				D714154A152AEEEE00926AAB /* MainStoryboard_iPad.storyboard */,
-				D714154D152AEEEE00926AAB /* MasterViewController.h */,
-				D714154E152AEEEE00926AAB /* MasterViewController.m */,
-				D7141550152AEEEE00926AAB /* DetailViewController.h */,
-				D7141551152AEEEE00926AAB /* DetailViewController.m */,
+				D7D3989115750C2600B1787D /* ZipArchive */,
+				D7141559152AEF4D00926AAB /* GUI */,
+				D7141558152AEF3A00926AAB /* Model */,
 				D714153C152AEEEE00926AAB /* Supporting Files */,
 			);
 			path = EventsReader;
@@ -98,12 +177,88 @@
 		D714153C152AEEEE00926AAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D7D398AF1575154300B1787D /* updates.plist */,
+				D7D398AD157514EF00B1787D /* entities.zip */,
+				D73352FE154EB48600C91228 /* unchecked.png */,
+				D73352FC154EB47D00C91228 /* checked.png */,
 				D714153D152AEEEE00926AAB /* EventsReader-Info.plist */,
 				D714153E152AEEEE00926AAB /* InfoPlist.strings */,
 				D7141541152AEEEE00926AAB /* main.m */,
 				D7141543152AEEEE00926AAB /* EventsReader-Prefix.pch */,
+				D7D4DB97153EF72300F1A3F9 /* entities.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7141558152AEF3A00926AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3988E1575073D00B1787D /* Constants.h */,
+				D7D3988F1575073D00B1787D /* Constants.m */,
+				D7D3988B157506BE00B1787D /* Reachability.h */,
+				D7D3988C157506BE00B1787D /* Reachability.m */,
+				D714155A152AEF7900926AAB /* Event.h */,
+				D714155B152AEF7900926AAB /* Event.m */,
+				D7D4DB83153D906500F1A3F9 /* DownloadManager.h */,
+				D7D4DB84153D906500F1A3F9 /* DownloadManager.m */,
+				D7D4DB8B153DB95700F1A3F9 /* Util.h */,
+				D7D4DB8C153DB95700F1A3F9 /* Util.m */,
+				D7D4DB8F153EECEF00F1A3F9 /* EntityInfo.h */,
+				D7D4DB90153EECF000F1A3F9 /* EntityInfo.m */,
+				D7D4DB99153EFEF600F1A3F9 /* EntityManager.h */,
+				D7D4DB9A153EFEF600F1A3F9 /* EntityManager.m */,
+				D7D4DB9C153F031A00F1A3F9 /* EventManager.h */,
+				D7D4DB9D153F031A00F1A3F9 /* EventManager.m */,
+				D7CE952C1545AC97001650F2 /* EntityAnnotation.h */,
+				D7CE952D1545AC97001650F2 /* EntityAnnotation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D7141559152AEF4D00926AAB /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				D7141544152AEEEE00926AAB /* AppDelegate.h */,
+				D7141545152AEEEE00926AAB /* AppDelegate.m */,
+				D7141547152AEEEE00926AAB /* MainStoryboard_iPhone.storyboard */,
+				D7141550152AEEEE00926AAB /* EventDetailViewController.h */,
+				D7141551152AEEEE00926AAB /* EventDetailViewController.m */,
+				D7F05B601534264A0098B092 /* MenuViewController.h */,
+				D7F05B611534264A0098B092 /* MenuViewController.m */,
+				D7D4DB4A153C5EBF00F1A3F9 /* EventMediaGalleryViewController.h */,
+				D7D4DB4B153C5EBF00F1A3F9 /* EventMediaGalleryViewController.m */,
+				D7D4DBB015406F2000F1A3F9 /* EventListViewController.h */,
+				D7D4DBB115406F2000F1A3F9 /* EventListViewController.m */,
+				D7CE9522154581BD001650F2 /* EventInfoDetailViewController.h */,
+				D7CE9523154581BD001650F2 /* EventInfoDetailViewController.m */,
+				D7335300154EB6D400C91228 /* FilterViewController.h */,
+				D7335301154EB6D400C91228 /* FilterViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		D7D3989115750C2600B1787D /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3989215750C2600B1787D /* minizip */,
+				D7D3989A15750C2600B1787D /* ZipArchive.h */,
+				D7D3989B15750C2600B1787D /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		D7D3989215750C2600B1787D /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3989315750C2600B1787D /* crypt.h */,
+				D7D3989415750C2600B1787D /* ioapi.c */,
+				D7D3989515750C2600B1787D /* ioapi.h */,
+				D7D3989615750C2600B1787D /* unzip.c */,
+				D7D3989715750C2600B1787D /* unzip.h */,
+				D7D3989815750C2600B1787D /* zip.c */,
+				D7D3989915750C2600B1787D /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +314,15 @@
 			files = (
 				D7141540152AEEEE00926AAB /* InfoPlist.strings in Resources */,
 				D7141549152AEEEE00926AAB /* MainStoryboard_iPhone.storyboard in Resources */,
-				D714154C152AEEEE00926AAB /* MainStoryboard_iPad.storyboard in Resources */,
+				D7141576152B168B00926AAB /* icon.png in Resources */,
+				D7D4DB98153EF72400F1A3F9 /* entities.plist in Resources */,
+				D73352FD154EB47D00C91228 /* checked.png in Resources */,
+				D73352FF154EB48600C91228 /* unchecked.png in Resources */,
+				D7D398AE157514EF00B1787D /* entities.zip in Resources */,
+				D7D398B01575154300B1787D /* updates.plist in Resources */,
+				D7D398BA15751FF600B1787D /* icon-retina.png in Resources */,
+				D7D398BD157521B500B1787D /* Default.png in Resources */,
+				D7D398BF157521B800B1787D /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +335,25 @@
 			files = (
 				D7141542152AEEEE00926AAB /* main.m in Sources */,
 				D7141546152AEEEE00926AAB /* AppDelegate.m in Sources */,
-				D714154F152AEEEE00926AAB /* MasterViewController.m in Sources */,
-				D7141552152AEEEE00926AAB /* DetailViewController.m in Sources */,
+				D7141552152AEEEE00926AAB /* EventDetailViewController.m in Sources */,
+				D714155C152AEF7900926AAB /* Event.m in Sources */,
+				D7F05B621534264A0098B092 /* MenuViewController.m in Sources */,
+				D7D4DB4C153C5EBF00F1A3F9 /* EventMediaGalleryViewController.m in Sources */,
+				D7D4DB85153D906500F1A3F9 /* DownloadManager.m in Sources */,
+				D7D4DB8D153DB95700F1A3F9 /* Util.m in Sources */,
+				D7D4DB91153EECF000F1A3F9 /* EntityInfo.m in Sources */,
+				D7D4DB9B153EFEF600F1A3F9 /* EntityManager.m in Sources */,
+				D7D4DB9E153F031B00F1A3F9 /* EventManager.m in Sources */,
+				D7D4DBB215406F2100F1A3F9 /* EventListViewController.m in Sources */,
+				D7CE9524154581BD001650F2 /* EventInfoDetailViewController.m in Sources */,
+				D7CE952E1545AC97001650F2 /* EntityAnnotation.m in Sources */,
+				D7335302154EB6D400C91228 /* FilterViewController.m in Sources */,
+				D7D3988D157506BE00B1787D /* Reachability.m in Sources */,
+				D7D398901575073D00B1787D /* Constants.m in Sources */,
+				D7D3989C15750C2600B1787D /* ioapi.c in Sources */,
+				D7D3989D15750C2600B1787D /* unzip.c in Sources */,
+				D7D3989E15750C2600B1787D /* zip.c in Sources */,
+				D7D3989F15750C2600B1787D /* ZipArchive.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,14 +374,6 @@
 				D7141548152AEEEE00926AAB /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D714154A152AEEEE00926AAB /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D714154B152AEEEE00926AAB /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +433,7 @@
 				GCC_PREFIX_HEADER = "EventsReader/EventsReader-Prefix.pch";
 				INFOPLIST_FILE = "EventsReader/EventsReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,6 +445,7 @@
 				GCC_PREFIX_HEADER = "EventsReader/EventsReader-Prefix.pch";
 				INFOPLIST_FILE = "EventsReader/EventsReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -295,6 +469,7 @@
 				D7141557152AEEEE00926AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
