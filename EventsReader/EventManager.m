@@ -180,11 +180,11 @@
                 NSMutableDictionary *tmpDictionary = [[NSMutableDictionary alloc] init ];
                 
                 NSArray *tmpArray = [event objectForKey:@"media_gallery"];
-                //NSLog(@"tmpArray:%@",tmpArray);
+                NSLog(@"tmpArray:%@",tmpArray);
                 
                 for (NSString *tmpString in tmpArray)
                 {
-                    ////NSLog(@"tmpString:%@",tmpString);
+                    NSLog(@"tmpString:%@",tmpString);
                     [tmpDictionary setObject:@"" forKey:tmpString];
                     
                 }
@@ -233,7 +233,7 @@
 
 
 
-- (void) prepareEventGallery: (Event *)eventItem 
+- (void) prepareEventGallery: (Event *)eventItem
 {
     
     NSLog(@"EventManager.prepareEventGallery");
@@ -250,6 +250,8 @@
             
             dispatch_async(dispatch_get_global_queue(0, 0), ^{ 
                 __block NSString *resourcePath = [dm cachedDownloadInFolder:[NSURL URLWithString:tmpString] :[NSString stringWithFormat:@"%@/%@", eventItem.uid, CACHE_FOLDER_GALLERY]] ;
+                
+                NSLog(@"EventManager.prepareEventGallery - resourcePath%@",resourcePath);
                 
                 [eventItem.mediaGallery setObject:resourcePath forKey:tmpString];
                 

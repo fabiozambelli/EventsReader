@@ -100,7 +100,7 @@
     
     self.em = [sharedApp eventManager];        
     
-    //[self.em prepareEventGallery:self.detailItem];
+    [self.em prepareEventGallery:self.detailItem];
     
     // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updatePicture:) name:@"entitypicture" object:nil];    
     

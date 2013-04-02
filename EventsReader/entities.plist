@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>event.provider1</key>
-	<string>http://localhost/events1.json;d1;0</string>
+	<string>http://localhost/events.json;d1;0</string>
 </dict>
 </plist>

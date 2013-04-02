@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>provider1</key>
-	<string>http://localhost/updates.json</string>
+	<string>http://localhost/update.json</string>
 </dict>
 </plist>
